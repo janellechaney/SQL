@@ -1,0 +1,38 @@
+Creating database
+
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, name TEXT, color TEXT, price INTEGER, amount_purchased INTEGER, sold INTEGER);
+
+INSERT into clothing_store VALUES ( 1 ,  "BLOUSE", "RED",  6 , 10 , 5 );
+
+INSERT into clothing_store Values (2, "PANTS", "BLUE",4, 20, 8);
+
+INSERT into clothing_store VALUES (3, "SKIRT", "BLACK", 10, 5, 2) ;
+
+INSERT into clothing_store VALUES (4, "MEN_SHIRT", "WHITE",14 , 15, 13);
+
+INSERT into clothing_store VALUES ( 5, "men_pants", "BLUE", 34, 10, 5);
+
+INSERT into clothing_store VALUES ( 6, "Pajamas", "red", 10, 5, 1);
+
+INSERT into clothing_store VALUES ( 7 ,  "BLOUSE", "PINK",  10 , 20, 9);
+
+INSERT into clothing_store Values (8, "PANTS", "BLack",10, 30, 20);
+
+INSERT into clothing_store Values (9, "swimwear", "white", 20, 50, 40);
+
+INSERT into clothing_store VALUES ( 10, "blouse", "green", 15, 20, 5);
+
+INSERT into clothing_store VALUES ( 11, "shirt", "Black", 25, 20, 10);
+
+INSERT into clothing_store VALUES ( 12, "shorts", "blue", 20, 50, 40);
+
+INSERT into clothing_store VALUES ( 13, "skort", "blue", 10, 5, 5);
+
+INSERT into clothing_store VALUES ( 14, "button_down", "white", 35, 30, 25);
+
+INSERT into clothing_store VALUES (15, "shoes", "black", 50, 20, 19);
+
+dispaying database order by items sold and also including only items that sold more than 20.
+SELECT * FROM clothing_store
+WHERE sold >20
+ORDER by sold asc;
